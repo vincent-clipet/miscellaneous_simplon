@@ -1,5 +1,5 @@
 import random
-from lib.heap import Heap
+from src.heap import Heap
 
 
 
