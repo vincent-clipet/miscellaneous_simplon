@@ -95,7 +95,8 @@ class Heap(BinaryTree):
         if bool: print("-----------------------------------------------------")
         
         # swap last 2 values, they are reversed by mistake at the end of the heapsort
-        ret[-1], ret[-2] = ret[-2], ret[-1]
+        if (ret[-1] > ret[-2]):
+            ret[-1], ret[-2] = ret[-2], ret[-1]
         self.array = ret
         self.array.reverse()
         
